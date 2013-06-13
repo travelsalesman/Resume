@@ -162,6 +162,9 @@
 \newenvironment{innerlist}[1][\enskip\textbullet]%
         {\begin{compactenum}[#1]}{\end{compactenum}}
 
+\newenvironment{sublist}[1][\enskip\textendash]%
+        {\begin{compactenum}[#1]}{\end{compactenum}}
+
 % To add some paragraph space between lines.
 % This also tells LaTeX to preferably break a page on one of these gaps
 % if there is a needed pagebreak nearby.
@@ -187,7 +190,6 @@
 \begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
 229 Easy St. Apt. B  & \textit{Voice:} (512) 573-0179 \\
 Mountain View, CA 94043 USA       & \textit{E-mail:} \href{mailto:rajiv.kadaba@gmail.com}{rajiv.kadaba@gmail.com}\\
-& \textit{Web:} \href{http://users.ece.utexas.edu/~rkadaba}{users.ece.utexas.edu/$\sim$rkadaba}\\
 \end{tabular}
 
 \section{Education}
@@ -202,30 +204,30 @@ Mountain View, CA 94043 USA       & \textit{E-mail:} \href{mailto:rajiv.kadaba@g
 
     \href{http://www.vjti.ac.in/}{Veermata Jijabai Technological Institute (VJTI)}
 
-\section{Courses}
-Convex Optimization, Data Mining,  Computer Security and Privacy, Formal Methods in Distributed Systems, Engineering Programming Languages, Computer Architecture, VLSI, Robotics
-
 \section{Professional Experience}
 %
 \textbf{\href{http://www.micrsoft.com/}{Microsoft Corporation}}
 \begin{outerlist}
-\item[] \textit{Software Development Engineer in Test, \href{http://www.microsoftmediaroom.com/}{Mediaroom}} \hfill \textbf{August 2009 to Present}
+\item[] \textit{Software Development Engineer 2, \href{http://www.microsoftmediaroom.com/}{Mediaroom}} \hfill \textbf{August 2009 to Present}
     \begin{innerlist}
-    \item Architected a test automation framework for multi platform integration and performance testing of a heterogenous family of IPTV clients.
-    \item Developed a modeling system of the mediaroom AV pipeline to predict user experience issues and increase testability.
-    \item Built data visualization tools to help diagnose A/V quality.
+    \item Part of a team developing Media and Services components for IPTV clients.
+    \begin{sublist}
+\item  Platforms: Xbox, iOS, WinCE
+\item  Media Transports: Smooth Streaming, RTP, MPEG-TS, Shoutcast
+\item  Metadata: TTML, Captions, Teletext, EBIF
+\item Telemetry/Diagnostics Retrieval, Analysis and Visualization
+\item A/V pipeline performance characterization and optimization
+\item REST API's for remote administration
+    \end{sublist}
     \end{innerlist}
 \end{outerlist}
 \begin{outerlist}
-\item[] \textit{Software Development Engineer in Test Intern, \href{http://www.microsoftmediaroom.com/}{Mediaroom}} \hfill \textbf{June 2008 to August 2008}
+\item[] \textit{Software Engineer Intern, \href{http://www.microsoftmediaroom.com/}{Mediaroom}} \hfill \textbf{June 2008 to August 2008}
     \begin{innerlist}
-    \item Designed and implemented HDMI test framework which is flexible, portable and scalable along with an UI. 
+    \item Designed and implemented HDMI test framework along with an UI. 
     \item Developed HD frame capture application by porting Directshow Interfaces to .NET.
-    \item Worked as part of team developing test infrastructure for Mircosoft's IPTV platform.
     \end{innerlist}
 \end{outerlist}
-
-
 
 \section{Academic Experience}
 \textbf{\href{http://www.utexas.edu}{The University of Texas at Austin}}
@@ -308,19 +310,19 @@ Techniques \hfill \textbf{Fall 2006}
 
 \section{Skills}
 %
-Programming Languages: Assembly (x86, MSC51, AVR), C, C++, C\# .NET 4.0, Python
+Programming Languages: Assembly (x86, AVR), C++, C\# , Python
 
 \blankline
 
-Platforms: Windows, Linux (Fedora)
+Web Development: JavaScript, Silverlight/WPF, PHP, MySQL, MS SQL
+
+\blankline
+
+Platforms: Windows, Linux (Fedora), Xbox, iOS
 
 \blankline
 
 Tools: Matlab/Simulink, Weka, MSC ADAMS
-
-\blankline
-
-Web Development: Silverlight/WPF, PHP, MySQL, MS SQL
 
 \blankline
 
